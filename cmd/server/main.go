@@ -31,7 +31,7 @@ func main() {
 	mux.HandleFunc("/api/auth/forgot-password", handler.ForgotPassword)
 	mux.Handle("/api/auth/logout",
 		middleware.AuthMiddleware(http.HandlerFunc(handler.Logout)))
-	
+
 	mux.Handle("/api/support/send_email",
 		middleware.AuthMiddleware(
 			http.HandlerFunc(supportHandler.SendEmail),
