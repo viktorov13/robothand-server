@@ -1,0 +1,17 @@
+# Go
+bin/
+*.exe
+*.log
+*.db
+
+# Android
+*.iml
+.gradle/
+build/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Node / Misc
+node_modules/
